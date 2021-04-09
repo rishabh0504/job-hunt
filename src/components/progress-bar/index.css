@@ -1,0 +1,3 @@
+progress::-moz-progress-bar { background: purple; }
+progress::-webkit-progress-value { background: purple; }
+progress { color: purple; }
