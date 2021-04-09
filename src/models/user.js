@@ -5,7 +5,10 @@ const User = {
     emailId: '',
     dateOfBirth: '',
     nationality: '',
-    countryOfResidence: ''
+    countryOfResidence: '',
+    everVisitedDubai: false,
+    haveRelative: false,
+    stayTime: ''
 }
 
 export default User;

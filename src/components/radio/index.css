@@ -1,0 +1,13 @@
+.btn-custom{
+    padding: 8px 25px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+    padding: 15px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.btn-active{
+    background-color:#d7d7d7;
+}
