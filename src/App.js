@@ -5,12 +5,13 @@ import Checkbox from './components/checkbox';
 import Input from './components/input';
 import Select from './components/select';
 import UserDetail from './screens/user-detail';
+import UserInterest from './screens/user-interest';
 
 
 function App() {
   return (
     <div className="row">
-      <div className=" d-none d-lg-block col-lg-5 col-md-12 left p-5">
+      <div className="col-lg-5 col-md-12  col-sm-12 col-xs-12 left p-5">
         {
           // Rather than this piece of code I have used the image from the requirement  data, We can uncomment and reuse it.
 
@@ -31,7 +32,7 @@ function App() {
         }
       </div>
       <div className="col-lg-7 col-xs-12 col-sm-12 col-md-12 p-4 mt-3">
-        <UserDetail />
+        <UserInterest />
       </div>
     </div>
   );

@@ -1,13 +1,7 @@
-/* .App{
-    width: 400px;
-    height: 400px;
-    background-color: brown;
-} */
-
-
 body{
     overflow-x: hidden;
 }
+
 .left{
     min-height: 610px;
     background-image: url('./assets/user-exp.png');
