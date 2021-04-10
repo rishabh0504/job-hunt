@@ -6,3 +6,11 @@
     width: 28px;
     height: 28px;
 }
+.align-center{
+    flex-direction: column;
+    align-items: center!important;
+    justify-content: center;
+}
+.link-text{
+    font-size: 25px;
+}

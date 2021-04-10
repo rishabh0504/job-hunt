@@ -3,7 +3,7 @@ import './index.css';
 import { Button, Select, Input, Checkbox, ProgressBar } from '../../components';
 import User from '../../models/user';
 import edit from '../../assets/edit.png';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 const ReviewApplication = () => {
 
@@ -19,9 +19,7 @@ const ReviewApplication = () => {
     const nextMove = () => {
 
     }
-    const backMove = () => {
-        history.push('/financial-status');
-    }
+
     return (
         <>
             <div className="row m-3">
@@ -159,8 +157,9 @@ const ReviewApplication = () => {
                     </div>
                 </div>
                 <div className="row d-flex mt-3">
-                    <div className="col-3">
-                        <Button type='button' label='Back' onClick={backMove} />
+                    <div className="col-3 d-flex align-center">
+                        {/* <Button type='button' label='Back' onClick={backMove} /> */}
+                        <Link to="/financial-status" className='link-text'>Back</Link>
                     </div>
                     <div className="col-6">
                         <Button type='button' label='Submit Application' onClick={nextMove} />
