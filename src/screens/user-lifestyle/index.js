@@ -2,54 +2,9 @@ import { useState } from 'react';
 import { ProgressBar, Radio, Button } from '../../components';
 import User from '../../models/user';
 import { useHistory } from "react-router-dom";
+import { reasonToTravel } from '../../constants';
 
-const reasonToTravel = [
-    {
-        label: 'Lifestyle',
-        value: 'Lifestyle',
-        location: '/images/calender.png'
-    },
-    {
-        label: 'Work opportunities',
-        value: 'Work opportunities',
-        location: '/images/calender.png'
-    },
-    {
-        label: 'Education',
-        value: 'Education',
-        location: '/images/calender.png'
-    },
-    {
-        label: 'Finance',
-        value: 'Finance',
-        location: '/images/calender.png'
-    },
-    {
-        label: 'Tourism',
-        value: 'Tourism',
-        location: '/images/calender.png'
-    },
-    {
-        label: 'Business',
-        value: 'Business',
-        location: '/images/calender.png'
-    },
-    {
-        label: 'Security',
-        value: 'Security',
-        location: '/images/calender.png'
-    },
-    {
-        label: 'Culture',
-        value: 'Culture',
-        location: '/images/calender.png'
-    },
-    {
-        label: 'Family',
-        value: 'Family',
-        location: '/images/family.png'
-    },
-]
+
 
 const UserLifestyle = () => {
 

@@ -2,58 +2,13 @@ import { useState } from 'react';
 import { ProgressBar, Radio, Button } from '../../components';
 import User from '../../models/user';
 import { useHistory } from "react-router-dom";
+import {
+    stayTime,
+    visitedOptions,
+    firendsAndRelative
+} from '../../constants';
 
-const visitedOptions = [
-    {
-        label: 'Yes',
-        value: true,
-        location: '/images/up.png'
-    },
-    {
-        label: 'No',
-        value: false,
-        location: '/images/down.png'
-    }
-]
-const firendsAndRelative = [
-    {
-        label: 'Yes',
-        value: true,
-        location: '/images/up.png'
-    },
-    {
-        label: 'No',
-        value: false,
-        location: '/images/down.png'
-    }
-]
-const stayTime = [
-    {
-        label: 'Upto 3 months',
-        value: '3',
-        location: '/images/calender.png'
-    },
-    {
-        label: '3 to 6 months',
-        value: '3-6',
-        location: '/images/calender.png'
-    },
-    {
-        label: '6 to 12 months',
-        value: '6-12',
-        location: '/images/calender.png'
-    },
-    {
-        label: '+12 months',
-        value: '12+',
-        location: '/images/calender.png'
-    },
-    {
-        label: '+3 years',
-        value: '+3y',
-        location: '/images/calender.png'
-    },
-]
+
 
 const UserInterest = () => {
 
