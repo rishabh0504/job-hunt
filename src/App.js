@@ -21,12 +21,14 @@ import WorkInterest from './screens/work-interest';
 import UserQuestionnaire from './screens/user-questionnaire';
 import UserFinancialStatus from './screens/user-financial-status';
 import ReviewApplication from './screens/review-application';
+import leftImage from './assets/user-exp.png';
 
 
 function App() {
   return (
     <div className="row">
-      <div className="col-lg-5 col-md-12  col-sm-12 col-xs-12 left p-5">
+      <div className="col-lg-5 col-md-12  col-sm-12 col-xs-12">
+        <img src={leftImage} class="img-fluid  left" />
         {
           // Rather than this piece of code I have used the image from the requirement  data, We can uncomment and reuse it.
 
