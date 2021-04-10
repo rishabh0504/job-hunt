@@ -18,9 +18,7 @@ const WorkInterest = () => {
     const nextMove = () => {
         history.push('/user-questionnaire');
     }
-    const backMove = () => {
-        history.push('/user-lifestyle');
-    }
+
     return (
         <>
             <div className="row m-3">

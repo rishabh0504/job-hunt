@@ -19,9 +19,7 @@ const UserLifestyle = () => {
     const nextMove = () => {
         history.push('/work-interest');
     }
-    const backMove = () => {
-        history.push('/user-detail');
-    }
+
     return (
         <>
             <div className="row m-3">

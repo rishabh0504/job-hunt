@@ -20,9 +20,7 @@ const UserQuestionnaire = () => {
     const nextMove = () => {
         history.push('/financial-status');
     }
-    const backMove = () => {
-        history.push('/work-interest');
-    }
+
     return (
         <>
             <div className="row m-3">

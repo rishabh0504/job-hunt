@@ -24,9 +24,7 @@ const UserInterest = () => {
     const nextMove = () => {
         history.push('/user-lifestyle');
     }
-    const backMove = () => {
-        history.push('/');
-    }
+
     return (
         <>
             <div className="row m-3">
