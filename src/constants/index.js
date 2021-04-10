@@ -5,7 +5,8 @@ const validation = {
     emailId: '^\S+@\S+$',
     dateOfBirth: '.*',
     countryOfResidence: '^[a-zA-Z]+$',
-    nationality: '^[a-zA-Z]+$'
+    nationality: '^[a-zA-Z]+$',
+    gender: '^[a-zA-Z]+$'
 };
 
 const UserErrors = {
@@ -15,7 +16,8 @@ const UserErrors = {
     emailId: false,
     dateOfBirth: false,
     nationality: false,
-    countryOfResidence: false
+    countryOfResidence: false,
+    gender: false
 }
 
 export {

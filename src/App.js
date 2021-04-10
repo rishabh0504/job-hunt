@@ -5,7 +5,12 @@ import Checkbox from './components/checkbox';
 import Input from './components/input';
 import Select from './components/select';
 import UserDetail from './screens/user-detail';
-import UserInterest from './screens/user-interest';
+import UserInterest from './screens/user-questionnaire';
+import UserLifestyle from './screens/user-lifestyle';
+import WorkInterest from './screens/work-interest';
+import UserQuestionnaire from './screens/user-questionnaire';
+import UserFinancialStatus from './screens/user-financial-status';
+import ReviewApplication from './screens/review-application';
 
 
 function App() {
@@ -32,7 +37,7 @@ function App() {
         }
       </div>
       <div className="col-lg-7 col-xs-12 col-sm-12 col-md-12 p-4 mt-3">
-        <UserInterest />
+        <UserDetail />
       </div>
     </div>
   );

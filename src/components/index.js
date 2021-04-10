@@ -4,6 +4,8 @@ import Checkbox from './checkbox';
 import Button from './button';
 import ProgressBar from './progress-bar';
 import Radio from './radio';
+import MultiSelect from './multi-select';
+
 
 
 export {
@@ -12,5 +14,6 @@ export {
     Checkbox,
     Input,
     ProgressBar,
-    Radio
+    Radio,
+    MultiSelect
 }
