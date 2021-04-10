@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ProgressBar, Radio, Button, MultiSelect } from '../../components';
 import User from '../../models/user';
+import { useHistory } from "react-router-dom";
 
 const areaofInterest = [
     {
@@ -140,7 +141,7 @@ const areaofInterest = [
 const UserQuestionnaire = () => {
 
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || User);
-
+    const history = useHistory()
     const clickHandler = (data) => {
         console.log(data);
         const newUser = { ...user, [data.name]: data.value };
@@ -149,10 +150,10 @@ const UserQuestionnaire = () => {
     }
 
     const nextMove = () => {
-
+        history.push('/financial-status');
     }
     const backMove = () => {
-
+        history.push('/work-interest');
     }
     return (
         <>

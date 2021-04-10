@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ProgressBar, Radio, Button } from '../../components';
 import User from '../../models/user';
+import { useHistory } from "react-router-dom";
 
 const reasonToTravel = [
     {
@@ -53,7 +54,7 @@ const reasonToTravel = [
 const UserLifestyle = () => {
 
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || User);
-
+    const history = useHistory()
     const clickHandler = (data) => {
         const newUser = { ...user, [data.name]: data.value };
         localStorage.setItem('user', JSON.stringify(newUser))
@@ -61,10 +62,10 @@ const UserLifestyle = () => {
     }
 
     const nextMove = () => {
-
+        history.push('/work-interest');
     }
     const backMove = () => {
-
+        history.push('/user-detail');
     }
     return (
         <>

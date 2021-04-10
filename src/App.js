@@ -1,9 +1,19 @@
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
 import Button from './components/button';
 import Checkbox from './components/checkbox';
 import Input from './components/input';
 import Select from './components/select';
+
 import UserDetail from './screens/user-detail';
 import UserInterest from './screens/user-questionnaire';
 import UserLifestyle from './screens/user-lifestyle';
@@ -37,7 +47,28 @@ function App() {
         }
       </div>
       <div className="col-lg-7 col-xs-12 col-sm-12 col-md-12 p-4 mt-3">
-        <UserDetail />
+        <Router>
+          <Switch>
+            <Route path="/review">
+              <ReviewApplication />
+            </Route>
+            <Route path="/financial-status">
+              <UserFinancialStatus />
+            </Route>
+            <Route path="/user-lifestyle">
+              <UserLifestyle />
+            </Route>
+            <Route path="/work-interest">
+              <WorkInterest />
+            </Route>
+            <Route path="/user-questionnaire">
+              <UserQuestionnaire />
+            </Route>
+            <Route path="/">
+              <UserDetail />
+            </Route>
+          </Switch>
+        </Router>
       </div>
     </div>
   );
