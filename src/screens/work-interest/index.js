@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ProgressBar, Radio, Button, MultiSelect } from '../../components';
 import User from '../../models/user';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { industryPreferredForWork } from '../../constants';
 
 
@@ -35,8 +35,8 @@ const WorkInterest = () => {
             </div>
 
             <div className="row d-flex mt-3">
-                <div className="col-3">
-                    <Button type='button' label='Back' onClick={backMove} />
+                <div className="col-3 d-flex align-center">
+                    <Link to="/user-lifestyle" className='link-text'>Back</Link>
                 </div>
                 <div className="col-3">
                     <Button type='button' label='Next' onClick={nextMove} />

@@ -32,7 +32,6 @@ const UserDetail = () => {
     }
 
     const applyNow = () => {
-        //history.push('/user-lifestyle');
         history.push('/user-interest');
     }
 
@@ -103,7 +102,6 @@ const UserDetail = () => {
                     <Button type='button' label='Apply now' onClick={applyNow} />
                 </div>
             </div>
-
         </>
     )
 }
