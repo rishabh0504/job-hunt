@@ -35,7 +35,7 @@ const UserLifestyle = () => {
 
             <div className="row d-flex mt-3">
                 <div className="col-3 d-flex align-center">
-                    <Link to="/user-detail">Back</Link>
+                    <Link to="/user-detail" className='link-text'>Back</Link>
                 </div>
                 <div className="col-3">
                     <Button type='button' label='Next' onClick={nextMove} />

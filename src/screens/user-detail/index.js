@@ -67,13 +67,7 @@ const UserDetail = () => {
                     <Input type='date' label='Date of birth' value={user.dateOfBirth} name='dateOfBirth' onChange={changeHandler} />
                 </div>
                 <div className="col-6">
-                    <div className="row">
-                        <div className="col-12 mt-3">
-                            {/* <Checkbox label='Male' name='gender' value='Male' checked={user.gender} onClick={changeHandler} /> */}
-                            <Radio name='gender' options={genders} selectedItem={clickHandler} defaultSelected={user.gender ? user.gender : ''} />
-                        </div>
-
-                    </div>
+                    <Radio name='gender' options={genders} selectedItem={clickHandler} defaultSelected={user.gender ? user.gender : ''} />
                 </div>
             </div>
             <div className="row d-flex mt-3">
