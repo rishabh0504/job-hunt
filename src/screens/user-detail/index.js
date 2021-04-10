@@ -1,9 +1,24 @@
 import { checkPropTypes } from 'prop-types';
 import { useState } from 'react';
-import { Button, Select, Input, Checkbox } from '../../components';
+import { Button, Select, Input, Checkbox, Radio } from '../../components';
 import { validation, UserErrors } from '../../constants';
 import User from '../../models/user';
 const regExp = new RegExp();
+
+
+const genders = [
+    {
+        label: 'Male',
+        value: 'Male',
+        location: '/images/calender.png'
+    },
+    {
+        label: 'Female',
+        value: 'Female',
+        location: '/images/calender.png'
+    }
+
+]
 
 const UserDetail = () => {
 
@@ -17,11 +32,18 @@ const UserDetail = () => {
         if (!status) {
             setError({ ...error, [event.target.name]: true })
         }
-        setUser({ ...user, [event.target.name]: event.target.value });
+        const userData = { ...user, [event.target.name]: event.target.value };
+        localStorage.setItem('user', JSON.stringify(userData))
+        setUser(userData);
+    }
+    const clickHandler = (data) => {
+        const newUser = { ...user, [data.name]: data.value };
+        localStorage.setItem('user', JSON.stringify(newUser))
+        setUser(newUser);
     }
 
     const applyNow = () => {
-        localStorage.setItem('user', JSON.stringify(user))
+        // localStorage.setItem('user', JSON.stringify(user))
     }
 
     return (
@@ -57,12 +79,11 @@ const UserDetail = () => {
                 </div>
                 <div className="col-6">
                     <div className="row">
-                        <div className="col-6 mt-3">
-                            <Checkbox label='Male' />
+                        <div className="col-12 mt-3">
+                            {/* <Checkbox label='Male' name='gender' value='Male' checked={user.gender} onClick={changeHandler} /> */}
+                            <Radio name='gender' options={genders} selectedItem={clickHandler} defaultSelected={user.gender ? user.gender : ''} />
                         </div>
-                        <div className="col-6 mt-3">
-                            <Checkbox label='Female' />
-                        </div>
+
                     </div>
                 </div>
             </div>

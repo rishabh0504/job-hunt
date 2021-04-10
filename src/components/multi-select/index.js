@@ -1,24 +1,28 @@
 import './index.css';
 import logo from '../../assets/down.png';
 import { useState } from 'react';
-const Radio = (props) => {
-    const { name, options = [], defaultSelected = false } = props;
+const MultiSelect = (props) => {
+    const { name, options = [], defaultSelected = [] } = props;
     const [selectedData, setSelectedData] = useState(defaultSelected);
 
     const clickHandler = (item, name) => {
+        const newSelectedData = [...selectedData, item.value];
         props.selectedItem({
-            ...item, name
+            name,
+            value: newSelectedData
         })
-        setSelectedData(item.value);
+
+        setSelectedData(newSelectedData);
     }
     return (
         <div className='row d-flex'>
             {
                 options && options.map((item, index) => {
-                    const activeClass = item.value === selectedData ? 'btn-active' : '';
+                    const activeClass = selectedData.includes(item.value) ? 'btn-active' : '';
+
                     return (
                         <div className="form-check  col-lg-4 col-md-6 col-sm-6 col-xs-6 " key={index} >
-                            <input className="form-check-input" type="radio" name={name} value={item.value} className='d-none' />
+                            <input className="form-check-input" type="checkbox" name={name} value={item.value} className='d-none' />
                             <label className="form-check-label" htmlFor={name} onClick={() => clickHandler(item, name)}>
                                 <button type="button" className={`btn btn-light btn-sm btn-custom ${activeClass} mt-2`} name='custom-name'>
                                     {
@@ -36,4 +40,4 @@ const Radio = (props) => {
     )
 }
 
-export default Radio;
+export default MultiSelect;
