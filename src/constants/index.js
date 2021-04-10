@@ -1,7 +1,7 @@
 const validation = {
     firstName: '^[a-zA-Z]+$',
     lastName: '^[a-zA-Z]+$',
-    contactNumber: '^(?:\+971|00971|0)?(?:50|51|52|55|56|2|3|4|6|7|9)\d{7}$',
+    contactNumber: '^\d{10}$',
     emailId: '^\S+@\S+$',
     dateOfBirth: '.*',
     countryOfResidence: '^[a-zA-Z]+$',
