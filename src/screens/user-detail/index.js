@@ -18,6 +18,7 @@ const UserDetail = () => {
         const regex = validation[event.target.name] || '.*';
         const data = event.target.value || '';
         const status = data.match(new RegExp(regex));
+        console.log(status);
         if (!status) {
             setError({ ...error, [event.target.name]: true })
         }
@@ -64,7 +65,8 @@ const UserDetail = () => {
             </div>
             <div className="row d-flex mt-3">
                 <div className="col-6">
-                    <Input type='date' label='Date of birth' value={user.dateOfBirth} name='dateOfBirth' onChange={changeHandler} />
+                    <Input type='date' label='Date of birth' value={user.dateOfBirth} name='dateOfBirth' onChange={changeHandler}
+                        error={error['dateOfBirth']} />
                 </div>
                 <div className="col-6">
                     <Radio name='gender' options={genders} selectedItem={clickHandler} defaultSelected={user.gender ? user.gender : ''} />
@@ -85,10 +87,10 @@ const UserDetail = () => {
             </div>
             <div className="row d-flex mt-3">
                 <div className="col-6">
-                    <Input type='text' label='Contact number' value={user.contactNumber} name='contactNumber' onChange={changeHandler} />
+                    <Input type='text' label='Contact number' error={error['contactNumber']} value={user.contactNumber} name='contactNumber' onChange={changeHandler} />
                 </div>
                 <div className="col-6">
-                    <Input type='email' label='Email address' value={user.emailId} name='emailId' onChange={changeHandler} />
+                    <Input type='email' label='Email address' error={error['emailId']} value={user.emailId} name='emailId' onChange={changeHandler} />
                 </div>
             </div>
             <div className="row d-flex mt-3">
