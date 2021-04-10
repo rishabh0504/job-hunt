@@ -1,14 +1,12 @@
 body{
     overflow-x: hidden;
 }
-
 .left{
-    min-height: 610px;
+    min-height:590px;;
     background-image: url('./assets/user-exp.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .blockquote{
     font-size: 12px;
 }
@@ -18,5 +16,10 @@ body{
 .brandName{
     font-weight: bold;
     font-size: -webkit-xxx-large;
+}
+.scrollable{
+    overflow-y: auto;
+    height: auto;
+    height: 590px;
 }
 

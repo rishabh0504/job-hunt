@@ -138,7 +138,6 @@ const UserFinancialStatus = () => {
                     <Radio name='educationCompletion' options={educationCompletion} selectedItem={clickHandler} defaultSelected={user.educationCompletion ? user.educationCompletion : ''} />
                 </div>
             </div>
-
             <div className="row d-flex mt-3">
                 <div className="col-3">
                     <Button type='button' label='Back' onClick={backMove} />
