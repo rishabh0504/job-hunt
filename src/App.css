@@ -2,10 +2,7 @@ body{
     overflow-x: hidden;
 }
 .left{
-    min-height:590px;;
-    background-image: url('./assets/user-exp.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height:610px  !important;
 }
 .blockquote{
     font-size: 12px;
