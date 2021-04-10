@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ProgressBar, Radio, Button } from '../../components';
 import User from '../../models/user';
+import { useHistory } from "react-router-dom";
 
 const finanicalSavings = [
     {
@@ -99,6 +100,7 @@ const educationCompletion = [
 const UserFinancialStatus = () => {
 
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || User);
+    const history = useHistory()
 
     const clickHandler = (data) => {
         const newUser = { ...user, [data.name]: data.value };
@@ -107,10 +109,10 @@ const UserFinancialStatus = () => {
     }
 
     const nextMove = () => {
-
+        history.push('/review');
     }
     const backMove = () => {
-
+        history.push('/user-questionnaire');
     }
     return (
         <>

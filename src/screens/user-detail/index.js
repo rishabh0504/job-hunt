@@ -1,6 +1,7 @@
-import { checkPropTypes } from 'prop-types';
 import { useState } from 'react';
 import { Button, Select, Input, Checkbox, Radio } from '../../components';
+import { useHistory } from "react-router-dom";
+
 import { validation, UserErrors } from '../../constants';
 import User from '../../models/user';
 const regExp = new RegExp();
@@ -24,6 +25,7 @@ const UserDetail = () => {
 
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || User);
     const [error, setError] = useState(UserErrors);
+    const history = useHistory();
 
     const changeHandler = (event) => {
         const regex = validation[event.target.name] || '.*';
@@ -43,7 +45,7 @@ const UserDetail = () => {
     }
 
     const applyNow = () => {
-        // localStorage.setItem('user', JSON.stringify(user))
+        history.push('/user-lifestyle');
     }
 
     return (
