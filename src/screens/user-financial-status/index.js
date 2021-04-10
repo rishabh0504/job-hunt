@@ -19,9 +19,6 @@ const UserFinancialStatus = () => {
     const nextMove = () => {
         history.push('/review');
     }
-    const backMove = () => {
-        history.push('/user-questionnaire');
-    }
     return (
         <>
             <div className="row m-3">

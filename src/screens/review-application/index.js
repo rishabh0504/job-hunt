@@ -158,7 +158,6 @@ const ReviewApplication = () => {
                 </div>
                 <div className="row d-flex mt-3">
                     <div className="col-3 d-flex align-center">
-                        {/* <Button type='button' label='Back' onClick={backMove} /> */}
                         <Link to="/financial-status" className='link-text'>Back</Link>
                     </div>
                     <div className="col-6">
