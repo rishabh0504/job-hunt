@@ -15,7 +15,7 @@ import Input from './components/input';
 import Select from './components/select';
 
 import UserDetail from './screens/user-detail';
-import UserInterest from './screens/user-questionnaire';
+import UserInterest from './screens/user-interest';
 import UserLifestyle from './screens/user-lifestyle';
 import WorkInterest from './screens/work-interest';
 import UserQuestionnaire from './screens/user-questionnaire';
@@ -46,7 +46,7 @@ function App() {
           </figure> */
         }
       </div>
-      <div className="col-lg-7 col-xs-12 col-sm-12 col-md-12 p-4 mt-3">
+      <div className="col-lg-7 col-xs-12 col-sm-12 col-md-12 p-4 mt-3 scrollable">
         <Router>
           <Switch>
             <Route path="/review">
@@ -63,6 +63,9 @@ function App() {
             </Route>
             <Route path="/user-questionnaire">
               <UserQuestionnaire />
+            </Route>
+            <Route path="/user-interest">
+              <UserInterest />
             </Route>
             <Route path="/">
               <UserDetail />

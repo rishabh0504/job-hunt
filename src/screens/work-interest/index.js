@@ -141,7 +141,7 @@ const WorkInterest = () => {
         <>
             <div className="row m-3">
                 <h3 className='ml-3 mr-3'>Progress</h3>
-                <ProgressBar value='60' max='100' />
+                <ProgressBar value='40' max='100' />
             </div>
             <div className="row d-flex mt-3">
                 <h5 className='ml-3 mr-3'>What industries would you prefer to work in?</h5>

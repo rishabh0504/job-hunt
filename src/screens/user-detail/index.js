@@ -45,7 +45,8 @@ const UserDetail = () => {
     }
 
     const applyNow = () => {
-        history.push('/user-lifestyle');
+        //history.push('/user-lifestyle');
+        history.push('/user-interest');
     }
 
     return (
