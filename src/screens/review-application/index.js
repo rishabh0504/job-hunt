@@ -26,15 +26,15 @@ const ReviewApplication = () => {
                 <h3 className='ml-3 mr-3'>Progress</h3>
                 <ProgressBar value='100' max='100' />
             </div>
-            <div className="row m-3">
-                <div className="col-12 mt-2">
-                    <div className="jumbotron d-flex">
+            <div className="row m-3 ">
+                <div className="col-12 mt-3 ">
+                    <div className="jumbotron d-flex p-3">
                         <h4 className='text-primary'>Basic Information</h4>
                         <img src={edit} className='img' onClick={() => { editUserData('/user-detail') }} />
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="jumbotron">
+                    <div className="jumbotron p-3">
                         <p><b>Name :</b> {user.firstName} {user.lastName}</p>
                         <p><b>Date of birth : </b>{user.dateOfBirth}</p>
                         <p><b>Gender : </b>{user.gender}</p>
@@ -45,13 +45,13 @@ const ReviewApplication = () => {
                     </div>
                 </div>
                 <div className="col-12 mt-2">
-                    <div className="jumbotron d-flex">
+                    <div className="jumbotron d-flex p-3">
                         <h4 className='text-primary'>User interest</h4>
                         <img src={edit} className='img' onClick={() => { editUserData('/user-interest') }} />
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="jumbotron">
+                    <div className="jumbotron p-3">
                         <div className="row">
                             <div className="col-12 mt-2">
                                 <h5 className='ml-3 mr-3'>Have you ever visited Dubai?</h5>
@@ -69,13 +69,13 @@ const ReviewApplication = () => {
                     </div>
                 </div>
                 <div className="col-12 mt-2">
-                    <div className="jumbotron d-flex">
+                    <div className="jumbotron d-flex p-3">
                         <h4 className='text-primary'>User lifestyle</h4>
                         <img src={edit} className='img' onClick={() => { editUserData('/user-lifestyle') }} />
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="jumbotron">
+                    <div className="jumbotron p-3">
                         <div className="row">
                             <div className="col-12 mt-2">
                                 <h5 className='ml-3 mr-3'>Why do you want to come to dubai?</h5>
@@ -85,13 +85,13 @@ const ReviewApplication = () => {
                     </div>
                 </div>
                 <div className="col-12 mt-2">
-                    <div className="jumbotron d-flex">
+                    <div className="jumbotron d-flex p-3">
                         <h4 className='text-primary'>Work Interest</h4>
                         <img src={edit} className='img' onClick={() => { editUserData('/work-interest') }} />
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="jumbotron">
+                    <div className="jumbotron p-3">
                         <div className="row">
                             <div className="col-12 mt-2">
                                 <h5 className='ml-3 mr-3'>What industries would you prefer to work in?</h5>
@@ -101,13 +101,13 @@ const ReviewApplication = () => {
                     </div>
                 </div>
                 <div className="col-12 mt-2">
-                    <div className="jumbotron d-flex">
+                    <div className="jumbotron d-flex p-3">
                         <h4 className='text-primary'>User Questionnaire</h4>
                         <img src={edit} className='img' onClick={() => { editUserData('/user-questionnaire') }} />
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="jumbotron">
+                    <div className="jumbotron p-3">
                         <div className="row">
                             <div className="col-12 mt-2">
                                 <h5 className='ml-3 mr-3'>What are your interests?</h5>
@@ -117,13 +117,13 @@ const ReviewApplication = () => {
                     </div>
                 </div>
                 <div className="col-12 mt-2">
-                    <div className="jumbotron d-flex">
+                    <div className="jumbotron d-flex p-3">
                         <h4 className='text-primary'>User Questionnaire</h4>
                         <img src={edit} className='img' onClick={() => { editUserData('/user-questionnaire') }} />
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="jumbotron">
+                    <div className="jumbotron p-3">
                         <div className="row">
                             <div className="col-12 mt-2">
                                 <h5 className='ml-3 mr-3'>What are your interests?</h5>
@@ -133,13 +133,13 @@ const ReviewApplication = () => {
                     </div>
                 </div>
                 <div className="col-12 mt-2">
-                    <div className="jumbotron d-flex">
+                    <div className="jumbotron d-flex p-3">
                         <h4 className='text-primary'>Financial Status and Education</h4>
                         <img src={edit} className='img' onClick={() => { editUserData('/financial-status') }} />
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="jumbotron">
+                    <div className="jumbotron p-3">
                         <div className="row">
                             <div className="col-12 mt-2">
                                 <h5 className='ml-3 mr-3'>Do you have any financial savings?</h5>
