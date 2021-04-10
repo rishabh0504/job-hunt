@@ -2,24 +2,11 @@ import { useState } from 'react';
 import { Button, Select, Input, Checkbox, Radio } from '../../components';
 import { useHistory } from "react-router-dom";
 
-import { validation, UserErrors } from '../../constants';
+import { validation, UserErrors, genders } from '../../constants';
 import User from '../../models/user';
-const regExp = new RegExp();
 
 
-const genders = [
-    {
-        label: 'Male',
-        value: 'Male',
-        location: '/images/calender.png'
-    },
-    {
-        label: 'Female',
-        value: 'Female',
-        location: '/images/calender.png'
-    }
 
-]
 
 const UserDetail = () => {
 

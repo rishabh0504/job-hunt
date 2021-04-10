@@ -9,5 +9,6 @@
     height: 20px;
 }
 .btn-active{
-    background-color:#d7d7d7;
+    background-image: linear-gradient(to right, #4A1CB8,purple);
+    color:white;
 }
